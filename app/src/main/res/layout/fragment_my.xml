@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF00"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView in side MyFragment"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change text"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change text main activity"
+        android:onClick="clickBtn2"/>
+    <!--fragment.java에서는 onclick속성 발동 메소드가 없음 그래서 일반적으로 리스너를 이용함-->
+    <!--그럼에도 onclick속성을 주면 fragment를 보여주는 액티비티에서 발동함-->
+
+</LinearLayout>
